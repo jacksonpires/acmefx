@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.nordesti.app.main.MainAppController">
+   <children>
+      <Pane prefHeight="30.0" prefWidth="800.0" VBox.vgrow="NEVER">
+         <children>
+            <MenuBar fx:id="mainMenuBar" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="418.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Sistema">
+                  <items>
+                    <MenuItem fx:id="menuItemRegisterUsers" mnemonicParsing="false" onAction="#handleSystemUsersClick" text="Usuários..." />
+                    <MenuItem fx:id="menuExit" mnemonicParsing="false" onAction="#handleSystemExitClick" text="Sair" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Cadastros">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Clientes..." />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Sobre">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Sobre o Sistema..." />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Janela">
+                     <items>
+                        <MenuItem fx:id="menuIntermMaximize" mnemonicParsing="false" onAction="#handleWindowMaximize" text="Maximizar" />
+                        <MenuItem fx:id="menuItem1024768" mnemonicParsing="false" onAction="#handleWindow1024768" text="1024 x 768" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+      <Pane fx:id="bodyForm" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TabPane fx:id="mainTabPane" prefHeight="312.0" prefWidth="457.0" tabClosingPolicy="ALL_TABS">
+              <tabs>
+              </tabs>
+            </TabPane>
+         </children></Pane>
+      <Pane prefHeight="30.0" prefWidth="800.0" style="-fx-background-color: #e2e2e2;" VBox.vgrow="NEVER" />
+   </children>
+</VBox>

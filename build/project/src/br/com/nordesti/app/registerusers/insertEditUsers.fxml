@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.PasswordField?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.nordesti.app.registerusers.InsertEditUsersController">
+  <tabs>
+    <Tab fx:id="tabInsertEditUsers" onCloseRequest="#handleCloseTab" style="-fx-padding: 10;" text="Inserir/Editar">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="344.0" prefWidth="650.0">
+               <children>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="308.0" prefWidth="623.0" style="-fx-background-color: #ffe6cc; -fx-border-color: #ffb380; -fx-border-width: 5px; -fx-border-radius: 10;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Usuário">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldUsername" layoutX="14.0" layoutY="38.0" prefHeight="35.0" prefWidth="139.0" promptText="Usuário">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="14.0" layoutY="87.0" text="Nome">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldName" layoutX="14.0" layoutY="110.0" prefHeight="35.0" prefWidth="501.0" promptText="Nome">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="14.0" layoutY="165.0" text="Senha">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="textFieldPassword" layoutX="14.0" layoutY="189.0" prefHeight="35.0" prefWidth="200.0" promptText="Senha">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </PasswordField>
+                        <Label layoutX="227.0" layoutY="165.0" text="Confirmar Senha">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="textFieldPasswordConfirmation" layoutX="227.0" layoutY="189.0" prefHeight="35.0" prefWidth="200.0" promptText="Confirmar Senha">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </PasswordField>
+                        <Button fx:id="buttonSave" layoutX="452.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleSaveClick" onKeyPressed="#handleButtonSavePressed" text="Salvar">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonNew" layoutX="189.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleNewClick" onKeyPressed="#handleButtonNewPressed" text="Novo">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonDelete" layoutX="262.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleDeleteClick" onKeyPressed="#handleButtonDeletePressed"  text="Excluir">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonCancel" layoutX="348.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleCancelClick" onKeyPressed="#handleButtonCancelPressed" text="Cancelar">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonOK" layoutX="533.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleOkClick" onKeyPressed="#handleButtonOKPressed" prefHeight="35.0" prefWidth="76.0" text="Ok">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

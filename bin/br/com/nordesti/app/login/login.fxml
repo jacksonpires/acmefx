@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="209.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.nordesti.app.login.LoginController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="404.0">
+         <children>
+            <Pane prefHeight="190.0" prefWidth="402.0" style="-fx-background-color: #e2e2e2;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="buttonOK" layoutX="331.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleOKClick" onKeyPressed="#handleOKButtonKeyPressed" prefHeight="27.0" prefWidth="59.0" text="Ok" />
+                  <Button layoutX="248.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleCancelClick" onKeyPressed="#handleCancelButtonKeyPressed" text="Cancelar" />
+                  <TextField fx:id="textFieldUsername" layoutX="181.0" layoutY="47.0" onKeyPressed="#handleOKButtonKeyPressed" prefHeight="28.0" prefWidth="209.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="textFieldPassword" layoutX="181.0" layoutY="100.0" onKeyPressed="#handleOKButtonKeyPressed" prefHeight="28.0" prefWidth="209.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Label layoutX="181.0" layoutY="29.0" text="Usuário:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="181.0" layoutY="83.0" text="Senha:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imageLogin" fitHeight="155.0" fitWidth="155.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>
